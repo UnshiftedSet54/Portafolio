@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="shortcut icon" sizes="16x16" href="assets/logo/favicon-16x16.png" type="image/x-icon">
+      <title>SaRos | Desarrollador Web</title>
+      <link rel="stylesheet" href="CSS/index.css">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+   </head>
+
+   <body>
+      <header>
+         <h1>SaRos</h1>
+         <div class="container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+         </div>
+         <nav>
+            <ul><a href="http://127.0.0.1:5500/Portafolio">
+                  <li>Inicio</li>
+               </a><a href="#proyectos">
+                  <li class="middle">Proyectos</li>
+               </a><a href="#sobre">
+                  <li class="middle" style="margin-left: 0;">Sobre Mi</li>
+               </a><a href="#contactame">
+                  <li>Contactame</li>
+               </a>
+            </ul>
+         </nav>
+      </header>
+      <main>
+         <section class="hero">
+            <div class="container">
+               <h1>HOLA! MI NOMBRE ES SAMUEL ROSALES</h1>
+               <p class="text">Soy un Desarrollador Web en busca de ofrecer las mejores soluciones posibles para todo
+                  tipo de clientes.</p>
+               <div class="btn"><a href="#proyectos">Mis Proyectos</a></div>
+            </div>
+         </section>
+         <section class="proyectos" id="proyectos">
+            <h3 class="section-title">MIS PROYECTOS</h3>
+            <div class="cards">
+               <div class="card">
+                  <div class="img"></div>
+                  <div class="content">
+                     <h3 class="title">Lorem Ipsum</h3>
+                     <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus
+                        sit amet luctus venenatis </p>
+                     <p class="tech-text">HTML, CSS, JS</p>
+                     <div class="botones"><a href="#" target="_blank" rel="noopener noreferrer">
+                           <div><img src="assets/icons/coding.svg" alt="code logo"></div>
+                        </a><a href="#" target="_blank" rel="noopener noreferrer">
+                           <div><img src="assets/icons/web-site.svg" alt="website preview logo"></div>
+                        </a></div>
+                  </div>
+               </div>
+               <div class="card md">
+                  <div class="img"></div>
+                  <div class="content">
+                     <h3 class="title">Lorem Ipsum</h3>
+                     <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus
+                        sit amet luctus venenatis </p>
+                     <p class="tech-text">HTML, CSS, JS</p>
+                     <div class="botones"><a href="#" target="_blank" rel="noopener noreferrer">
+                           <div><img src="assets/icons/coding.svg" alt="code logo"></div>
+                        </a><a href="#" target="_blank" rel="noopener noreferrer">
+                           <div><img src="assets/icons/web-site.svg" alt="website preview logo"></div>
+                        </a></div>
+                  </div>
+               </div>
+               <div class="card md">
+                  <div class="img"></div>
+                  <div class="content">
+                     <h3 class="title">Lorem Ipsum</h3>
+                     <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus
+                        sit amet luctus venenatis </p>
+                     <p class="tech-text">HTML, CSS, JS</p>
+                     <div class="botones"><a href="#" target="_blank" rel="noopener noreferrer">
+                           <div><img src="assets/icons/coding.svg" alt="code logo"></div>
+                        </a><a href="#" target="_blank" rel="noopener noreferrer">
+                           <div><img src="assets/icons/web-site.svg" alt="website preview logo"></div>
+                        </a></div>
+                  </div>
+               </div>
+               <div class="card">
+                  <div class="img"></div>
+                  <div class="content">
+                     <h3 class="title">Lorem Ipsum</h3>
+                     <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus
+                        sit amet luctus venenatis </p>
+                     <p class="tech-text">HTML, CSS, JS</p>
+                     <div class="botones"><a href="#" target="_blank" rel="noopener noreferrer">
+                           <div><img src="assets/icons/coding.svg" alt="code logo"></div>
+                        </a><a href="#" target="_blank" rel="noopener noreferrer">
+                           <div><img src="assets/icons/web-site.svg" alt="website preview logo"></div>
+                        </a></div>
+                  </div>
+               </div>
+            </div>
+            <p class="helper">Quieres que trabajemos juntos? <a href="#">Contactame</a></p>
+         </section>
+         <section class="sobre" id="sobre">
+            <h3 class="section-title">SOBRE MI</h3>
+            <p>Soy un Desarrollador Front-End proveniente de Venezuela. Me interesa crear UI/UX que le permita a las
+               empresas tener una gran presencia en internet. <br><br>Soy un gran trabajador en equipo, me gusta
+               resolver problemas y aportar mis conocimientos para el mejoramiento de ambientes de trabajo. Se aceptar
+               las criticas constructivas y estoy dispuesto a aprender cosas nuevas.</p>
+         </section>
+         <section class="contactame" id="contactame">
+            <h3 class="section-title">CONTACTAME</h3>
+            <form action="" method="post">
+               <div class="nombre"><label for="nombre">NOMBRE</label><input type="text" name="nombre" id="nombre"
+                     placeholder="Nombre Apellido..."></div>
+               <div class="correo"><label for="correo">CORREO</label><input type="email" name="correo" id="correo"
+                     placeholder="example@gmail.com"></div>
+               <div class="mensaje"><label for="mensaje">MENSAJE</label><textarea class="mensaje" name="mensaje" id=""
+                     placeholder="Ingrese el contenido del mensaje..."></textarea></div><button
+                  type="submit">Enviar</button>
+            </form>
+         </section>
+      </main>
+   </body>
+
+</html>
