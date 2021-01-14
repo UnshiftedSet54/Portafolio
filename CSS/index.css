@@ -1,13 +1,9 @@
 * {
-  -webkit-transition: 0.3s ease-in;
-  transition: 0.3s ease-in;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: Roboto,-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  letter-spacing: 2px;
-  line-height: 24px;
+  font-family: 'Roboto',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 a {
@@ -20,7 +16,7 @@ header, .hero, .contactame {
   color: #fff;
 }
 
-header, nav ul, .hero, .contactame {
+header, nav ul, .contactame {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -34,8 +30,7 @@ header {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  padding: 0px 5%;
-  height: 8vh;
+  padding: 1rem 0;
   width: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -44,22 +39,33 @@ header {
   border: #111111;
 }
 
-header img {
-  width: 40px;
+header .container {
+  width: 90%;
+  max-width: 850px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-header h1 {
-  border-bottom: 3px solid #2E739A;
-  padding-bottom: 10px;
+header .container h1 {
+  border-bottom: 3px solid #0075b9;
+  padding-bottom: 0.2em;
   font-size: 1.5rem;
 }
 
-header .container {
+header .container .burger {
   display: inline-block;
   cursor: pointer;
 }
 
-header .container div {
+header .container .burger div {
   width: 30px;
   height: 4px;
   background-color: #fff;
@@ -69,59 +75,54 @@ header .container div {
   transition: 0.4s;
 }
 
-header nav {
+header .container nav {
   display: none;
 }
 
-header nav a {
+header .container nav a {
   text-decoration: none;
   color: #fff;
 }
 
-header nav a li {
+header .container nav a li {
   list-style: none;
   font-size: 1.2rem;
 }
 
-header nav a .middle {
+header .container nav a .middle {
   margin: 0 30px;
 }
 
-main {
-  width: 100%;
-}
-
 .hero {
-  justify-items: left;
-  height: 92vh;
-  padding: 0 5%;
+  padding: 5rem 0 9rem 0;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(91% + 2px));
           clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(91% + 2px));
+}
+
+.hero .container {
+  width: 90%;
+  max-width: 850px;
+  margin: 0 auto;
 }
 
 .hero .container h1 {
   font-size: 2rem;
   letter-spacing: 2px;
-  line-height: 45px;
+  line-height: 3rem;
 }
 
 .hero .container p {
-  width: 80%;
+  margin: 1.5rem 0 2.3rem 0;
   color: #c5c5c5;
   font-size: 1.2rem;
-  margin: 30px 0 10px 0;
   line-height: 35px;
-}
-
-.hero .container div {
-  margin-top: 30px;
 }
 
 .hero .container a {
   display: inline-block;
   font-size: 1.2rem;
-  padding: 15px 25px;
-  background-color: #2E739A;
+  padding: 1rem 2.5rem;
+  background-color: #0075b9;
   border-radius: 50px;
   outline: transparent;
 }
@@ -141,7 +142,7 @@ main {
 
 .proyectos .cards {
   width: 100%;
-  margin: 12vh 0;
+  margin: 6rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -329,101 +330,116 @@ main {
   margin: 20px auto 0 auto;
 }
 
-@media screen and (min-width: 500px) {
-  header h1 {
-    font-size: 2rem;
-  }
-  .hero {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .hero .container {
-    text-align: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .hero .container h1 {
-    font-size: 2.4em;
-  }
-  .hero .container p {
-    width: 85%;
-  }
+/* @media screen and (min-width: 500px){
+   header{
+      h1{
+         font-size: 2rem;
+      }
+   }
+
+   .hero{
+      justify-content: center;
+      .container{
+         text-align: center;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+
+         h1{
+            font-size: 2.4em;
+         }
+         
+         p{
+            width: 85%;
+         }
+      }
+   }
 }
 
-@media screen and (min-width: 600px) {
-  .hero .container {
-    text-align: center;
-  }
-  .hero .container h1 {
-    font-size: 3em;
-  }
-  .section-title {
-    font-size: 2rem;
-  }
+@media screen and (min-width: 600px){
+   // .hero{
+   //    padding: 0px 40px;
+   // }
+
+   .hero{
+      .container{
+         text-align: center;
+         h1{
+            font-size: 3em;
+         }
+      }
+   }
+
+   .section-title{
+      font-size: 2rem;
+   }
 }
 
-@media screen and (min-width: 650px) {
-  header, .hero {
-    padding: 0px 10%;
-  }
-  .proyectos {
-    padding: 60px 10%;
-  }
-  .sobre {
-    padding: 110px 10% 160px 10%;
-  }
-  .contactame {
-    padding: 108px 10% 55px 10%;
-  }
-  .contactame form {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .contactame form .nombre, .contactame form .correo {
-    width: 47.5%;
-  }
-  .contactame form .nombre {
-    margin-right: 5%;
-  }
-  .contactame form .mensaje {
-    width: 100%;
-  }
+@media screen and (min-width: 650px){
+   header, .hero{
+      padding: 0px 10%;
+   }
+
+   .proyectos{
+      padding: 60px 10%;
+   }
+
+   .sobre{
+      padding: 110px 10% 160px 10%;
+   }
+
+   .contactame{
+      padding: 108px 10% 55px 10%;
+   }
+
+   .contactame{
+      form{
+         flex-direction: row;
+         flex-wrap: wrap;
+         
+         .nombre, .correo{
+            width: 47.5%;
+         }
+
+         .nombre{
+            margin-right: 5%;
+         }
+         .mensaje{
+            width: 100%;
+         }
+      }
+   }
 }
 
-@media screen and (min-width: 720px) {
-  header {
-    padding: 0px 13%;
-  }
-  header .container {
-    display: none;
-  }
-  header nav {
-    display: inline-block;
-  }
-  .hero {
-    padding: 0px 13%;
-  }
-  .proyectos {
-    padding: 12vh 13%;
-  }
-  .sobre {
-    padding: 4vh 13% 20vh 13%;
-  }
-  .contactame {
-    padding: 25vh 13% 15vh 13%;
-  }
+@media screen and (min-width: 720px){
+   header{
+      padding: 0px 13%;
+
+      .container{
+         display: none;
+      }
+
+      nav{
+         display: inline-block;
+      }
+   }
+
+   .hero{
+      padding: 0px 13%;
+   }
+
+   .proyectos{
+      padding: 12vh 13%;
+   }
+
+   .sobre{
+      padding: 4vh 13% 20vh 13%;
+   }
+
+   .contactame{
+      padding: 25vh 13% 15vh 13%;
+   }
 }
+
+ */
 /*# sourceMappingURL=index.css.map */

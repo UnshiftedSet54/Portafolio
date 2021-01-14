@@ -7,37 +7,44 @@
       <link rel="shortcut icon" sizes="16x16" href="assets/logo/favicon-16x16.png" type="image/x-icon">
       <title>SaRos | Desarrollador Web</title>
       <link rel="stylesheet" href="CSS/index.css">
-      <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
    </head>
 
    <body>
       <header>
-         <h1>SaRos</h1>
-         <div class="container" onclick="myFunction(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
+         <div class="container">
+            <h1>SaRos</h1>
+            <div class="burger" onclick="myFunction(this)">
+               <div class="bar1"></div>
+               <div class="bar2"></div>
+               <div class="bar3"></div>
+            </div>
+            <nav>
+               <ul>
+                  <a href="http://127.0.0.1:5500/Portafolio">
+                     <li>Inicio</li>
+                  </a>
+                  <a href="#proyectos">
+                     <li class="middle">Proyectos</li>
+                  </a>
+                  <a href="#sobre">
+                     <li class="middle" style="margin-left: 0;">Sobre Mi</li>
+                  </a>
+                  <a href="#contactame">
+                     <li>Contactame</li>
+                  </a>
+               </ul>
+            </nav>
          </div>
-         <nav>
-            <ul><a href="http://127.0.0.1:5500/Portafolio">
-                  <li>Inicio</li>
-               </a><a href="#proyectos">
-                  <li class="middle">Proyectos</li>
-               </a><a href="#sobre">
-                  <li class="middle" style="margin-left: 0;">Sobre Mi</li>
-               </a><a href="#contactame">
-                  <li>Contactame</li>
-               </a>
-            </ul>
-         </nav>
       </header>
       <main>
          <section class="hero">
             <div class="container">
-               <h1>HOLA! MI NOMBRE ES SAMUEL ROSALES</h1>
+               <h1>HOLA! SOY SAMUEL ROSALES</h1>
                <p class="text">Soy un Desarrollador Web en busca de ofrecer las mejores soluciones posibles para todo
                   tipo de clientes.</p>
-               <div class="btn"><a href="#proyectos">Mis Proyectos</a></div>
+               <div class="btn"><a href="#proyectos">MIS PROYECTOS</a></div>
             </div>
          </section>
          <section class="proyectos" id="proyectos">
