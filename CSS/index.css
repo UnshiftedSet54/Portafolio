@@ -115,14 +115,14 @@ header .container nav a .middle {
 .hero .container p {
   margin: 1.5rem 0 2.3rem 0;
   color: #c5c5c5;
-  font-size: 1.2rem;
+  font-size: 1.36rem;
   line-height: 35px;
 }
 
 .hero .container a {
   display: inline-block;
-  font-size: 1.2rem;
-  padding: 1rem 2.5rem;
+  font-size: 1.36rem;
+  padding: 1rem 2.6rem;
   background-color: #0075b9;
   border-radius: 50px;
   outline: transparent;
@@ -138,27 +138,35 @@ header .container nav a .middle {
 }
 
 .proyectos {
-  padding: 12vh 5%;
+  padding: 4rem 0 2rem 0;
 }
 
-.proyectos .cards {
+.proyectos .container {
+  width: 90%;
+  max-width: 1150px;
+  margin: 0 auto;
+  letter-spacing: 1px;
+}
+
+.proyectos .container h2 {
+  padding-bottom: 4rem;
+  font-size: 1.7rem;
+}
+
+.proyectos .container .cards {
   width: 100%;
   max-width: 1150px;
-  margin: 6rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
 }
 
-.proyectos .cards .card {
+.proyectos .container .cards .card {
   width: 280px;
   border-radius: 20px;
   -webkit-box-shadow: 5px 5px 10px #13131383;
@@ -168,14 +176,14 @@ header .container nav a .middle {
   background-color: #fafafa;
 }
 
-.proyectos .cards .card .img {
+.proyectos .container .cards .card .img {
   height: 200px;
   background-image: url("../assets/images/Screenshot_20191204-113031.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.proyectos .cards .card .content {
+.proyectos .container .cards .card .content {
   margin: 35px;
   text-align: left;
   display: -webkit-box;
@@ -190,27 +198,27 @@ header .container nav a .middle {
           justify-content: center;
 }
 
-.proyectos .cards .card .content .title, .proyectos .cards .card .content .description, .proyectos .cards .card .content .tech-text {
+.proyectos .container .cards .card .content .title, .proyectos .container .cards .card .content .description, .proyectos .container .cards .card .content .tech-text {
   margin-bottom: 20px;
 }
 
-.proyectos .cards .card .content .title {
+.proyectos .container .cards .card .content .title {
   color: #383838;
   margin-bottom: 20px;
   font-size: 1.5rem;
 }
 
-.proyectos .cards .card .content .description {
+.proyectos .container .cards .card .content .description {
   font-size: 1em;
   color: #676767;
 }
 
-.proyectos .cards .card .content .tech-text {
+.proyectos .container .cards .card .content .tech-text {
   font-size: 0.8em;
   color: #676767;
 }
 
-.proyectos .cards .card .content .botones {
+.proyectos .container .cards .card .content .botones {
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -221,7 +229,7 @@ header .container nav a .middle {
           justify-content: space-between;
 }
 
-.proyectos .cards .card .content .botones a div {
+.proyectos .container .cards .card .content .botones a div {
   border: 2px solid black;
   border-radius: 100px;
   display: -webkit-box;
@@ -229,35 +237,42 @@ header .container nav a .middle {
   display: flex;
 }
 
-.proyectos .cards .card .content .botones a div img {
+.proyectos .container .cards .card .content .botones a div img {
   width: 25px;
   margin: 10px;
 }
 
-.proyectos .helper {
-  font-size: 1.2em;
+.proyectos .container .helper {
+  font-size: 1.3rem;
   line-height: 35px;
   margin-top: 40px;
+  color: #676767;
 }
 
-.proyectos .helper a {
+.proyectos .container .helper a {
   text-decoration: none;
   color: #2E739A;
+}
+
+.sobre {
+  padding: 2rem 0 4rem 0;
 }
 
 .sobre .container {
   width: 90%;
   max-width: 1150px;
-  margin: 2rem auto 4rem auto;
+  margin: 0 auto;
   text-align: center;
+  letter-spacing: 1px;
 }
 
-.sobre .container h3 {
-  margin-bottom: 50px;
+.sobre .container h2 {
+  padding-bottom: 4rem;
+  font-size: 1.7rem;
 }
 
 .sobre .container p {
-  font-size: 1.2em;
+  font-size: 1.3rem;
   line-height: 35px;
   color: #676767;
 }
@@ -276,15 +291,17 @@ header .container nav a .middle {
   width: 90%;
   max-width: 1150px;
   margin: 0 auto;
+  letter-spacing: 1px;
 }
 
-.contactame .container h3 {
+.contactame .container h2 {
+  padding-bottom: 4rem;
   text-align: center;
-  margin-bottom: 50px;
+  font-size: 1.7rem;
 }
 
 .contactame .container form {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -294,8 +311,8 @@ header .container nav a .middle {
           flex-direction: column;
 }
 
-.contactame .container form div {
-  margin-bottom: 20px;
+.contactame .container form div + div {
+  margin-top: 1.5rem;
 }
 
 .contactame .container form div label {
@@ -309,7 +326,7 @@ header .container nav a .middle {
   border-radius: 5px;
   padding: 10px 10px;
   outline: none;
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
 .contactame .container form div .mensaje {
@@ -317,14 +334,14 @@ header .container nav a .middle {
 }
 
 .contactame .container form button {
-  font-size: 1.2rem;
-  padding: 12px 50px;
+  font-size: 1.36rem;
+  padding: 1rem 2.6rem;
   color: #fff;
-  background-color: #2E739A;
+  background-color: #0075b9;
   border: none;
   border-radius: 50px;
-  outline: transparent;
-  margin: 20px auto 0 auto;
+  outline: none;
+  margin: 1.2rem auto 0 auto;
 }
 
 /* @media screen and (min-width: 500px){
