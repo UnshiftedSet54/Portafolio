@@ -1,135 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
-      <!-- <link rel="icon" type="image/png" sizes="16x16" href="assets/icons/favicon-16x16.png"> -->
-      <title>SaRos | Desarrollador Web</title>
-      <link rel="stylesheet" href="CSS/index.css">
-      <link rel="preconnect" href="https://fonts.gstatic.com">
-      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
-   </head>
-
-   <body>
-      <header>
-
-         <div class="container">
-            <h1>SaRos</h1>
-            <div class="burger" onclick="myFunction(this)">
-               <div class="bar1"></div>
-               <div class="bar2"></div>
-               <div class="bar3"></div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Saros</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+</head>                                             
+<body>
+    <header class="header-section">
+        <div class="container header">
+            <div class="header-logo">
+                <h1 class="logo">Saros</h1>
             </div>
-            <nav>
-               <ul>
-                  <a href="http://127.0.0.1:5500/Portafolio">
-                     <li>Inicio</li>
-                  </a>
-                  <a href="#proyectos">
-                     <li class="middle">Proyectos</li>
-                  </a>
-                  <a href="#sobre">
-                     <li class="middle" style="margin-left: 0;">Sobre Mi</li>
-                  </a>
-                  <a href="#contactame">
-                     <li>Contactame</li>
-                  </a>
-               </ul>
+            <nav id="header-nav" class="header-nav">
+                <ul id="nav-links" class="nav-links">
+                    <a href="http://127.0.0.1:5500/index.html" class="nav-link"><li>Inicio</li></a>
+                    <a href="#projects" class="nav-link"><li>Proyectos</li></a>
+                    <a href="#about" class="nav-link"><li>Sobre Mi</li></a>
+                    <a href="#contact" class="nav-link"><li>Contacto</li></a>
+                </ul>
+                <div id="hamburger-toggle" class="hamburger-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </nav>
-         </div>
-      </header>
+        </div>
+    </header>
 
-      <section class="hero">
-         <div class="container">
-            <h1>HOLA! SOY SAMUEL ROSALES</h1>
-            <p class="text">Soy un Desarrollador Web en busca de ofrecer las mejores soluciones posibles para todo
+    <section class="hero-section">
+        <div class="container hero">
+            <h1 class="tittle">HOLA! SOY SAMUEL ROSALES. <br>BIENVENIDO. </h1>
+            <p class="subtittle">Soy un Desarrollador Web en busca de ofrecer las mejores soluciones posibles para todo
                tipo de clientes.</p>
-            <div class="btn"><a href="#proyectos">MIS PROYECTOS</a></div>
-         </div>
-      </section>
+            <a href="#projects" class="hero-action"><button class="btn">Mis Proyectos</button></a>
+        </div>
+    </section>
 
-      <section class="proyectos" id="proyectos">
-         <div class="container">
-            <h2 class="section-title">MIS PROYECTOS</h2>
-
-            <div class="cards">
-               <div class="card">
-                  <div class="img"></div>
-                  <div class="content">
-                     <h3 class="title">Lorem Ipsum</h3>
-                     <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus
-                        sit amet luctus venenatis </p>
-                     <p class="tech-text">HTML, CSS, JS</p>
-                     <div class="botones"><a href="#" target="_blank" rel="noopener noreferrer">
-                           <div><img src="assets/icons/coding.svg" alt="code logo"></div>
-                        </a><a href="#" target="_blank" rel="noopener noreferrer">
-                           <div><img src="assets/icons/web-site.svg" alt="website preview logo"></div>
-                        </a></div>
-                  </div>
-               </div>
-
-               <div class="card md">
-                  <div class="img"></div>
-                  <div class="content">
-                     <h3 class="title">Lorem Ipsum</h3>
-                     <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus
-                        sit amet luctus venenatis </p>
-                     <p class="tech-text">HTML, CSS, JS</p>
-                     <div class="botones"><a href="#" target="_blank" rel="noopener noreferrer">
-                           <div><img src="assets/icons/coding.svg" alt="code logo"></div>
-                        </a><a href="#" target="_blank" rel="noopener noreferrer">
-                           <div><img src="assets/icons/web-site.svg" alt="website preview logo"></div>
-                        </a></div>
-                  </div>
-               </div>
-
-               <div class="card md">
-                  <div class="img"></div>
-                  <div class="content">
-                     <h3 class="title">Lorem Ipsum</h3>
-                     <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus
-                        sit amet luctus venenatis </p>
-                     <p class="tech-text">HTML, CSS, JS</p>
-                     <div class="botones"><a href="#" target="_blank" rel="noopener noreferrer">
-                           <div><img src="assets/icons/coding.svg" alt="code logo"></div>
-                        </a><a href="#" target="_blank" rel="noopener noreferrer">
-                           <div><img src="assets/icons/web-site.svg" alt="website preview logo"></div>
-                        </a></div>
-                  </div>
-               </div>
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h1 class="projects-tittle">PROYECTOS DESTACADOS</h1>
+            <div class="projects-content">
+                <div class="project">
+                    <img class="thumbnail" src="./assets/tms.jpg" alt="Project #1">
+                    <div class="details">
+                        <div class="details-container">
+                            <h2 class="project-name">Lorem ipsum</h2>
+                            <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti nam necessitatibus ab similique cum sint quo quas rerum dolor.</p>
+                            <div class="redirects">
+                                <button class="redirect">preview</button>
+                                <button class="redirect">code</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <div class="projects-content">
+                <div class="project">
+                    <img class="thumbnail" src="./assets/mees.jpg" alt="Project #2">
+                    <div class="details">
+                        <div class="details-container">
+                            <h2 class="project-name">Lorem ipsum</h2>
+                            <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti nam necessitatibus ab similique cum sint quo quas rerum dolor.</p>
+                            <div class="redirects">
+                                <button class="redirect">preview</button>
+                                <button class="redirect">code</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-content">
+                <div class="project">
+                    <img class="thumbnail" src="./assets/iuri.jpg" alt="Project #3">
+                    <div class="details">
+                        <div class="details-container">
+                            <h2 class="project-name">Lorem ipsum</h2>
+                            <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti nam necessitatibus ab similique cum sint quo quas rerum dolor.</p>
+                            <div class="redirects">
+                                <button class="redirect">preview</button>
+                                <button class="redirect">code</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-content">
+                <div class="project">
+                    <img class="thumbnail" src="./assets/Sean-Halpin.jpg" alt="Project #4">
+                    <div class="details">
+                        <div class="details-container">
+                            <h2 class="project-name">Lorem ipsum</h2>
+                            <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti nam necessitatibus ab similique cum sint quo quas rerum dolor.</p>
+                            <div class="redirects">
+                                <button class="redirect">preview</button>
+                                <button class="redirect">code</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <p class="helper">Quieres que trabajemos juntos? <a href="#">Contactame</a></p>
-         </div>
-      </section>
+    <section id="about" class="about-section">
+        <div class="container about">
+            <div class="about-content">
+                <h1 class="about-tittle">Quien es Samuel Rosales?</h1>
+                <p class="about-text">Soy un Desarrollador Front-End proveniente de Venezuela. Me interesa crear UI/UX que le permita a las empresas tener una gran presencia en internet. <br/>Soy un gran trabajador en equipo, me gusta resolver problemas y aportar mis conocimientos para el mejoramiento de ambientes de trabajo. Se aceptar las criticas constructivas y estoy dispuesto a aprender cosas nuevas.</p>
+            </div>
+            <img class="profile-img" src="./assets/gato.jpg" alt="foto perfil">
+        </div>
+    </section>
 
-      <section class="sobre" id="sobre">
-         <div class="container">
-            <h2 class="section-title">SOBRE MI</h2>
-            <p>Soy un Desarrollador Front-End proveniente de Venezuela. Me interesa crear UI/UX que le permita a las
-               empresas tener una gran presencia en internet. <br><br>Soy un gran trabajador en equipo, me gusta
-               resolver problemas y aportar mis conocimientos para el mejoramiento de ambientes de trabajo. Se aceptar
-               las criticas constructivas y estoy dispuesto a aprender cosas nuevas.</p>
-         </div>
-      </section>
-
-      <section class="contactame" id="contactame">
-         <div class="container">
-            <h2 class="section-title">CONTACTAME</h2>
-            <form action="" method="post">
-               <div class="nombre"><label for="nombre">NOMBRE</label><input type="text" name="nombre" id="nombre"
-                     placeholder="Nombre Apellido..."></div>
-               <div class="correo"><label for="correo">CORREO</label><input type="email" name="correo" id="correo"
-                     placeholder="example@gmail.com"></div>
-               <div class="mensaje"><label for="mensaje">MENSAJE</label><textarea class="mensaje" name="mensaje" id=""
-                     placeholder="Ingrese el contenido del mensaje..."></textarea></div>
-               <button type="submit">ENVIAR</button>
+    <section id="contact" class="contact-section">
+        <div class="container contact">
+            <h1 class="contact-tittle">Trabajemos juntos en su próximo proyecto web</h1>
+            <form class="contact-form" action="post">
+                <fieldset class="form-field">
+                    <label for="name">Name</label>
+                    <input class="field-input" type="text" name="name-input" id="name-input" placeholder="Name" required>
+                </fieldset>
+                <fieldset class="form-field">
+                    <label for="email">Email</label>
+                    <input class="field-input" type="email" name="email-input" id="email-input" placeholder="Email" required>
+                </fieldset>
+                <fieldset class="form-field">
+                    <label for="message">Message</label>
+                    <textarea class="field-input" name="message" id="message-input" cols="30" rows="5" placeholder="Message" required></textarea>
+                </fieldset>
+                <input class="form-submit" type="submit" value="Send">
             </form>
-         </div>
-      </section>
+        </div>
+    </section>
 
-   </body>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
 </html>
