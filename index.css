@@ -169,7 +169,6 @@
     text-decoration: none;
     color: #fff;
 }
-
 .project:hover .details{
     opacity: 1;
     transform: translateY(0);
