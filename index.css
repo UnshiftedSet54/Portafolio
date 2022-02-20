@@ -169,6 +169,7 @@
     text-decoration: none;
     color: #fff;
 }
+
 .project:hover .details{
     opacity: 1;
     transform: translateY(0);
@@ -176,7 +177,8 @@
 
 .about-section{
     padding: 4rem 0;
-    background-color: #ededed;
+    background-color: #0075b9;
+    color: white;
 }
 
 .about{
