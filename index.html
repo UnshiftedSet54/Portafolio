@@ -8,10 +8,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>                                             
 <body>
     <header class="header-section">
-        <div class="container header">
+        <div class="container header" data-aos="fade-up" data-aos-duration="500">
             <div class="header-logo">
                 <h1 class="logo">Saros</h1>
             </div>
@@ -32,8 +33,8 @@
     </header>
 
     <section class="hero-section">
-        <div class="container hero">
-            <h1 class="tittle">HOLA! SOY SAMUEL ROSALES. <br>BIENVENIDO. </h1>
+        <div class="container hero" data-aos="fade-up" data-aos-duration="800">
+            <h1 class="tittle">HOLA! SOY SAMUEL ROSALES. <br>BIENVENIDO! </h1>
             <p class="subtittle">Soy un Desarrollador Web en busca de ofrecer las mejores soluciones posibles para todo
                tipo de clientes.</p>
             <a href="#projects" class="hero-action"><button class="btn">Mis Proyectos</button></a>
@@ -43,7 +44,7 @@
     <section id="projects" class="projects-section">
         <div class="container">
             <h1 class="projects-tittle">PROYECTOS DESTACADOS</h1>
-            <div class="projects-content">
+            <div class="projects-content" data-aos="fade-up" data-aos-duration="800">
                 <div class="project">
                     <img class="thumbnail" src="./assets/thumbnails/NimGameThumbnail.png" alt="Project #1">
                     <div class="details">
@@ -58,7 +59,7 @@
                     </div>
                 </div>
             </div>
-            <div class="projects-content">
+            <div class="projects-content" data-aos="fade-up" data-aos-duration="800">
                 <div class="project">
                     <img class="thumbnail" src="./assets/thumbnails/mees.jpg" alt="Project #2">
                     <div class="details">
@@ -73,7 +74,7 @@
                     </div>
                 </div>
             </div>
-            <div class="projects-content">
+            <div class="projects-content" data-aos="fade-up" data-aos-duration="800">
                 <div class="project">
                     <img class="thumbnail" src="./assets/thumbnails/iuri.jpg" alt="Project #3">
                     <div class="details">
@@ -88,7 +89,7 @@
                     </div>
                 </div>
             </div>
-            <div class="projects-content">
+            <div class="projects-content" data-aos="fade-up" data-aos-duration="800">
                 <div class="project">
                     <img class="thumbnail" src="./assets/thumbnails/Sean-Halpin.jpg" alt="Project #4">
                     <div class="details">
@@ -106,8 +107,8 @@
         </div>
     </section>
 
-    <section id="about" class="about-section">
-        <div class="container about">
+    <section id="about" class="about-section" data-aos="fade-up">
+        <div class="container about" data-aos="fade-up" data-aos-duration="800">
             <div class="about-content">
                 <h1 class="about-tittle">Quien es Samuel Rosales?</h1>
                 <p class="about-text">Soy un Desarrollador Front-End muy curioso. Me interesa crear UI/UX que le permita a las empresas tener una gran presencia en internet. <br/>Soy un gran trabajador en equipo, me gusta resolver problemas y aportar mis conocimientos para marcar la diferencia. Se aceptar las criticas constructivas y estoy siempre dispuesto a aprender cosas nuevas.</p>
@@ -117,7 +118,7 @@
     </section>
 
     <section id="contact" class="contact-section">
-        <div class="container contact">
+        <div class="container contact" data-aos="fade-up" data-aos-duration="800">
             <h1 class="contact-tittle">Trabajemos juntos en su próximo proyecto web</h1>
             <form class="contact-form" action="post">
                 <fieldset class="form-field">
@@ -139,5 +140,9 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
     <script src="./index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
