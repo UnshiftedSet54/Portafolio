@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Saros</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./index.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-</head>                                             
+</head>
 <body>
     <header class="header-section">
         <div class="container header" data-aos="fade-up" data-aos-duration="500">
@@ -18,10 +19,10 @@
             </div>
             <nav id="header-nav" class="header-nav">
                 <ul id="nav-links" class="nav-links">
-                    <a href="http://127.0.0.1:5500/index.html" class="nav-link"><li>Inicio</li></a>
-                    <a href="#projects" class="nav-link"><li>Proyectos</li></a>
-                    <a href="#about" class="nav-link"><li>Sobre Mi</li></a>
-                    <a href="#contact" class="nav-link"><li>Contacto</li></a>
+                    <a href="http://127.0.0.1:5500/index.html" class="nav-link"><li>Home</li></a>
+                    <a href="#projects" class="nav-link"><li>Projects</li></a>
+                    <a href="#about" class="nav-link"><li>About</li></a>
+                    <a href="#contact" class="nav-link"><li>Contact</li></a>
                 </ul>
                 <div id="hamburger-toggle" class="hamburger-toggle">
                     <span class="bar"></span>
@@ -34,9 +35,8 @@
 
     <section class="hero-section">
         <div class="container hero" data-aos="fade-up" data-aos-duration="800">
-            <h1 class="tittle">HOLA! SOY SAMUEL ROSALES. <br>BIENVENIDO! </h1>
-            <p class="subtittle">Soy un Desarrollador Web en busca de ofrecer las mejores soluciones posibles para todo
-               tipo de clientes.</p>
+            <h1 class="tittle">Hi! I'm Samuel Rosales</h1>
+            <p class="subtittle">I’m a computer engineer with a particular interest in  Front-End Development to deliver you exceptional digital experiences.</p>
             <a href="#projects" class="hero-action"><button class="btn">Mis Proyectos</button></a>
         </div>
     </section>
@@ -52,8 +52,8 @@
                             <h2 class="project-name">The Nim Game</h2>
                             <p class="description">A simple version of the Game of Nim. Made with HTML, CSS and JS.</p>
                             <div class="redirects">
-                                <button class="redirect"><a href="https://unshiftedset54.github.io/TheNimGame/">preview</a></button>
-                                <button class="redirect"><a href="https://github.com/UnshiftedSet54/TheNimGame">code</a></button>
+                                <a href="https://unshiftedset54.github.io/TheNimGame/" target="_blank"><button class="redirect">preview</button></a>
+                                <a href="https://github.com/UnshiftedSet54/TheNimGame" target="_blank"><button class="redirect">code</button></a>
                             </div>
                         </div>
                     </div>
@@ -61,44 +61,15 @@
             </div>
             <div class="projects-content" data-aos="fade-up" data-aos-duration="800">
                 <div class="project">
-                    <img class="thumbnail" src="./assets/thumbnails/mees.jpg" alt="Project #2">
+                    <!-- <img class="thumbnail" src="./assets/thumbnails/mees.jpg" alt="Project #2"> -->
+                    <img class="thumbnail" src="./assets/thumbnails/tetris.png" alt="Project #2">
                     <div class="details">
                         <div class="details-container">
-                            <h2 class="project-name">Lorem ipsum</h2>
-                            <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti nam necessitatibus ab similique cum sint quo quas rerum dolor.</p>
+                            <h2 class="project-name">Tetris</h2>
+                            <p class="description">Tetris game with a retro based aesthetic, made with JavaScript. </p>
                             <div class="redirects">
-                                <button class="redirect">preview</button>
-                                <button class="redirect">code</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="projects-content" data-aos="fade-up" data-aos-duration="800">
-                <div class="project">
-                    <img class="thumbnail" src="./assets/thumbnails/iuri.jpg" alt="Project #3">
-                    <div class="details">
-                        <div class="details-container">
-                            <h2 class="project-name">Lorem ipsum</h2>
-                            <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti nam necessitatibus ab similique cum sint quo quas rerum dolor.</p>
-                            <div class="redirects">
-                                <button class="redirect">preview</button>
-                                <button class="redirect">code</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="projects-content" data-aos="fade-up" data-aos-duration="800">
-                <div class="project">
-                    <img class="thumbnail" src="./assets/thumbnails/Sean-Halpin.jpg" alt="Project #4">
-                    <div class="details">
-                        <div class="details-container">
-                            <h2 class="project-name">Lorem ipsum</h2>
-                            <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti nam necessitatibus ab similique cum sint quo quas rerum dolor.</p>
-                            <div class="redirects">
-                                <button class="redirect">preview</button>
-                                <button class="redirect">code</button>
+                                <a href="https://unshiftedset54.github.io/TheNimGame/" target="_blank"><button class="redirect">preview</button></a>
+                                <a href="https://github.com/UnshiftedSet54/TheNimGame" target="_blank"><button class="redirect">code</button></a>
                             </div>
                         </div>
                     </div>
@@ -110,8 +81,9 @@
     <section id="about" class="about-section">
         <div class="container about">
             <div class="about-content">
-                <h1 class="about-tittle" data-aos="fade-up" data-aos-duration="500">Quien es Samuel Rosales?</h1>
-                <p class="about-text" data-aos="fade-up" data-aos-duration="800">Soy un Desarrollador Front-End muy curioso. Me interesa crear UI/UX que le permita a las empresas tener una gran presencia en internet. <br/>Soy un gran trabajador en equipo, me gusta resolver problemas y aportar mis conocimientos para marcar la diferencia. Se aceptar las criticas constructivas y estoy siempre dispuesto a aprender cosas nuevas.</p>
+                <h1 class="about-tittle" data-aos="fade-up" data-aos-duration="500">Who is Samuel Rosales?</h1>
+                <p class="about-text" data-aos="fade-up" data-aos-duration="800">25 years old Front-End Developer, interested in creating UI/UX that allows companies to have a great online presence. <br> I'm a great team player, I like to solve problems and contribute my knowledge to make a difference. I know how to take constructive criticism and I'm always willing to learn new things.</p>
+                <p class="about-text" style="padding-top: 20px;font-style: italic;">"Programming isn't about what you know; it's about what you can figure out.” - Chris Pine</p>
             </div>
             <img class="profile-img" src="./assets/avataaars.svg" alt="profile avatar" data-aos="fade-up" data-aos-duration="800">
         </div>
@@ -119,7 +91,7 @@
 
     <section id="contact" class="contact-section">
         <div class="container contact">
-            <h1 class="contact-tittle" data-aos="fade-up" data-aos-duration="500">Trabajemos juntos en su próximo proyecto web</h1>
+            <h1 class="contact-tittle" data-aos="fade-up" data-aos-duration="500">Let's work together on your next project</h1>
             <form class="contact-form" action="post" data-aos="fade-up" data-aos-duration="800">
                 <fieldset class="form-field">
                     <label for="name">Name</label>
@@ -135,6 +107,12 @@
                 </fieldset>
                 <input class="form-submit" type="submit" value="Send">
             </form>
+        </div>
+    </section>
+
+    <section id="socials" class="socials-section">
+        <div class="container socials">
+            <p> <a href="" target="_blank">CV</a> | Github | Instagram</p>
         </div>
     </section>
 
